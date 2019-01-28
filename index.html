@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Alton Carroll | Giphy Application</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Giphy Application</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+            </ul>
+			<form class="form-inline my-2 my-lg-0">
+				<div class="custom-control custom-switch mr-sm-2 border-right">
+					<input type="checkbox" class="custom-control-input mr-sm-2" id="animSwitch">
+					<label class="custom-control-label mr-sm-2 " for="animSwitch" style="color: #FFFFFF">Pause GIF</label>
+				</div>
+				<select class="custom-select mr-sm-2">
+					<option value="y">Y</option>
+					<option value="g" selected>G</option>
+					<option value="pg">PG</option>
+					<option value="pg-13">PG-13</option>
+					<option value="r">R</option>
+				</select>
+				<input class="form-control mr-sm-2" style="width: 60px" type="number" placeholder="10" aria-label="limit" id="rtn">
+                <input class="form-control mr-sm-2" type="text" placeholder="Add Animal" aria-label="add-animal" id="add-str">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="btn-add">Add</button>
+            </form>
+        </div>
+    </nav>
+	<br>
+	<div class="container">
+		<!--div for buttons-->
+		<div class="row">
+			<div class="col-sm-12 mr-2 btn-div" id="div-btn">
+				<!--<button class="btn btn-primary mr-sm-2" data-animal="cat">Cats </button>-->
+			</div>
+		</div>
+		<hr>
+		<!--div for gifs-->
+		<div class="row">
+			<div class="col-sm-12 mr-2" id="div-gif"> </div>
+		</div>
+		<div class="row">
+			<div class="text-center col-lg-6 offset-lg-3">
+				<h4>Giphy Application</h4>
+				<p>Copyright &copy; 2019 &middot; All Rights Reserved &middot; <a href="about.html" >Alton Carroll</a></p>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="  crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script> 
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> 
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
